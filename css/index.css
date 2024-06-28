@@ -4832,8 +4832,8 @@ figcaption {
 }
 
 .padding-section-large {
-  padding-top: 7rem;
-  padding-bottom: 7rem
+  padding-top: 5rem;
+  padding-bottom: 5rem
 }
 
 .navbar-link {
@@ -4911,7 +4911,7 @@ figcaption {
 }
 
 .heading-4 {
-  -webkit-text-fill-color: transparent;
+  
   background-image: linear-gradient(#000 51%, #d6d6d6 84%, #c7c7c7);
   -webkit-background-clip: text;
   background-clip: text;
@@ -5048,8 +5048,7 @@ figcaption {
 }
 
 .section-testimonial {
-  background-color: #000;
-  background-image: linear-gradient(#fff, #ececec 71%)
+  background-color: white;
 }
 
 .testimonial-position {
@@ -7326,7 +7325,8 @@ figcaption {
 .about-fact-head {
   grid-column-gap: 8px;
   align-items: center;
-  display: flex
+  display: flex;
+  justify-content: center;
 }
 
 .company-features {
@@ -9992,12 +9992,16 @@ figcaption {
 @media (max-width: 600px) {
   .custom-grid-container {
       display: block;
-      
   }
   .custom-grid-item {
-      margin-bottom: 20px;
+      margin-bottom: 200px;
       border: none; 
-      
+  }
+
+  .custom-container-large {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
@@ -10035,3 +10039,49 @@ figcaption {
   width: 200px;
   height: 200px;
 }
+
+.custom-testimonial-content-center{
+  justify-content: center;
+}
+
+.testimonial-dark-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px; /* Adjust width as needed */
+  background-color: #f0f0f0; /* Example background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
+.testimonial-client-image-wrapper {
+  /* Add styles for the client image wrapper if needed */
+}
+
+.custom-testimonial-content-center {
+  /* Add styles for the testimonial content wrapper if needed */
+}
+
+.heading-style-h5 {
+  font-size: 18px; /* Example font size */
+  line-height: 1.5;
+  color: #333; /* Example text color */
+  font-family: Arial, sans-serif; /* Example font family */
+  margin: 0; /* Remove default margins */
+}
+
+.margin-vertical {
+  margin-top: 10px; /* Example vertical margin */
+  margin-bottom: 10px; /* Example vertical margin */
+}
+
+.margin-medium {
+  margin: 15px; /* Example medium margin */
+}
+
+
+
+
