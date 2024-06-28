@@ -31,23 +31,6 @@ body {
 }
 
 
-.custom-heading-ai {
-  font-size: 1.5rem;
-}
-
-
-.custom-heading {
-  opacity: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 2rem;
-}
-
-
-.max-width-large {
-  max-width: 100%;
-}
 
 
 .layout226-component {
@@ -10008,3 +9991,30 @@ figcaption {
   }
 }
 
+.custom-heading-ai {
+  font-size: 1.5rem;
+}
+
+
+.custom-heading {
+  opacity: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 2rem;
+}
+
+
+.max-width-large {
+  max-width: 100%;
+}
+
+.custom-slide-up{
+  animation: slide-up 1s ease-in-out;
+}
+
+.color-gradient {
+  background: linear-gradient(to right, purple, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
