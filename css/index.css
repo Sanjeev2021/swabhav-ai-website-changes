@@ -4857,7 +4857,7 @@ figcaption {
 }
 
 .heading {
-  -webkit-text-fill-color: transparent;
+  
   background-image: linear-gradient(#000 44%, #757575 76%, #dfdfdf);
   -webkit-background-clip: text;
   background-clip: text;
