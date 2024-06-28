@@ -9953,10 +9953,17 @@ figcaption {
 }
 
 .custom-grid-item {
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.custom-grid-item:hover {
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.2); /* Increased elevation on hover */
+  transform: translateY(-5px);
 }
 
 .custom-about-fact-head {
@@ -10017,4 +10024,9 @@ figcaption {
   background: linear-gradient(to right, purple, orange);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+}
+
+.custom-image {
+  width: 200px;
+  height: 200px;
 }
