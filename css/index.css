@@ -9992,11 +9992,16 @@ figcaption {
 @media (max-width: 600px) {
   .custom-grid-container {
       display: block;
+      
   }
   .custom-grid-item {
       margin-bottom: 20px;
+      border: none; 
+      
   }
 }
+
+
 
 .custom-heading-ai {
   font-size: 1.5rem;
