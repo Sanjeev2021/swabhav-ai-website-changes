@@ -59,6 +59,9 @@ body {
   .layout-item {
     text-align: left;
   }
+  .level-margin {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -10080,6 +10083,6 @@ figcaption {
   margin: 15px; /* Example medium margin */
 }
 
-
-
-
+.level-margin {
+  margin: -5px;
+}
