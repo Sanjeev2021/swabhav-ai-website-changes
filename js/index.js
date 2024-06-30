@@ -1654,7 +1654,7 @@ __p+='`),
       "use strict";
       var iT = Vt();
       iT.define("brand", oT.exports = function(e) {
-          var t = {}, r = document, n = e("html"), i = e("body"), o = ".w-webflow-badge", a = window.location, s = /PhantomJS/i.test(navigator.userAgent), c = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange", l;
+          var t = {}, r = document, n = e("html"), i = e("body"), o = "", a = window.location, s = /PhantomJS/i.test(navigator.userAgent), c = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange", l;
           t.ready = function() {
               var y = n.attr("data-wf-status")
                 , g = n.attr("data-wf-domain") || "";
@@ -1669,16 +1669,7 @@ __p+='`),
               var y = r.fullScreen || r.mozFullScreen || r.webkitIsFullScreen || r.msFullscreenElement || !!r.webkitFullscreenElement;
               e(l).attr("style", y ? "display: none !important;" : "")
           }
-          function d() {
-              var y = e('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs")
-                , g = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e.svg").attr("alt", "").css({
-                  marginRight: "4px",
-                  width: "26px"
-              })
-                , S = e("<img>").attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg").attr("alt", "Made in Webflow");
-              return y.append(g, S),
-              y[0]
-          }
+        
           function M() {
               var y = i.children(o)
                 , g = y.length && y.get(0) === l
