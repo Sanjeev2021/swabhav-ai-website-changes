@@ -5703,10 +5703,9 @@ figcaption {
 
 .blog-featured-image-wrapper {
   width: 100%;
-  /* padding-top: 75%; */
+  padding-top: 75%;
   position: relative;
-  overflow: hidden;
-  border-radius: 14px 0px 0px 14px;
+  overflow: hidden
 }
 
 .blog23-date-wrapper {
@@ -6209,7 +6208,7 @@ figcaption {
   top: 0%;
   bottom: auto;
   left: 0%;
-  right: 0%
+  right: 0%;
 }
 
 .navigation {
@@ -6298,8 +6297,9 @@ figcaption {
 }
 
 .navigation-main {
-  height: 92px;
+  height: 60px;
   position: relative
+
 }
 
 .section-header {
@@ -7748,7 +7748,8 @@ figcaption {
     flex-direction: column;
     display: flex;
     position: absolute;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    text-align: center;
   }
 
   .dropdown-list-2.w--open {
@@ -7874,7 +7875,7 @@ figcaption {
   }
 
   .text-size-small-3 {
-    display: block;
+    display: none
   }
 
   .video-component {
@@ -7921,7 +7922,7 @@ figcaption {
   }
 
   h3 {
-    font-size: 1.6rem !important
+    font-size: 2rem
   }
 
   h4 {
@@ -8229,7 +8230,7 @@ figcaption {
   }
 
   .blog-featured-image-wrapper {
-    /* padding-top: 66% */
+    padding-top: 66%
   }
 
   .heading-style-h4-2 {
@@ -8601,8 +8602,7 @@ figcaption {
 
   .collection-list {
     grid-row-gap: 24px;
-    grid-template-columns: 1fr;
-    margin:5%;
+    grid-template-columns: 1fr
   }
 
   .blogpost-share-wrapper {
@@ -8854,9 +8854,9 @@ figcaption {
   grid-area: span 1/span 1/span 1/span 1
 }
 
-/* #w-node-dbcf3f47-cd4e-0072-11ee-682a2f12192f-094d9e5a {
+#w-node-dbcf3f47-cd4e-0072-11ee-682a2f12192f-094d9e5a {
   justify-self: start
-} */
+}
 
 #w-node-da1bb85e-686a-0f84-77c5-a9edf0adf05e-094d9e5a,
 #w-node-c715568c-d470-4d6d-477e-1c21cb97951f-094d9e5a,
@@ -9853,7 +9853,7 @@ figcaption {
 
 @media (max-width: 768px) {
   .custom-layout226-component {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 
@@ -10022,4 +10022,164 @@ figcaption {
 
 .level-margin {
   margin: -5px;
+}
+
+.container-navbar {
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: 100%;
+  grid-template-columns: 240px 1fr 240px;
+  grid-auto-columns: 1fr;
+  justify-content: start;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: grid;
+  background-color: white;
+}
+
+.link-brand-nav {
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-right: 80px;
+}
+
+.brand-nav {
+  height: 100%;
+  max-width: none;
+}
+
+.nav-menu {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+.right-navbar {
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.dropdown-nav {
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.dropdown-toggle-nav {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 12px;
+  display: flex;
+}
+
+.link-nav, .link-dropdown, .w-nav-brand {
+  text-decoration: none;
+}
+
+.custom-layout-card-content-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.custom-subfeature-4 p {
+  max-width: 600px; /* Adjust the max-width to control the text wrapping */
+  margin: 0 auto; /* Center the paragraph within its container */
+  line-height: 1.5; /* Adjust the line-height for better readability */
+}
+
+/* CSS for the vertical divider */
+.vertical-line {
+  width: 8px;
+  background-color: #A271B1; /* Adjust color as needed */
+  margin: 0 20px; /* Adjust margin for spacing */
+  align-self: stretch;
+  
+}
+
+.full-width-grid {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.custom-full-width-grid {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Flexbox for layout control */
+.custom-layout-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left and Right Content Areas */
+.custom-left-content, .custom-right-content {
+  width: 45%; /* Adjust width as needed */
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+/* Vertical Line Separator */
+.custom-vertical-line {
+  width: 8px;
+  background-color: #A271b1; /* Adjust color as needed */
+  margin: 0 20px; /* Adjust margin for spacing */
+  align-self: stretch;
+}
+
+/* Styling for Pricing Plans (adjust as per your original code) */
+.custom-pricing-plan {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-pricing-plan-name {
+  display: flex;
+  align-items: center;
+}
+
+.custom-pricing-plan-name img {
+  margin-right: 10px;
+}
+
+.custom-pricing-plan h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.custom-plan-feature-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.custom-plan-feature-row svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.custom-text-size-regular-5 {
+  font-size: 1rem;
 }
