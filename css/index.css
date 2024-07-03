@@ -10183,3 +10183,102 @@ figcaption {
 .custom-text-size-regular-5 {
   font-size: 1rem;
 }
+
+
+.custom-courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.custom-w-dyn-item {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.custom-blog-item-link {
+  display: flex;
+  flex: 1;
+}
+
+.custom-card-content {
+  flex: 1;
+  padding-right: 20px; /* Adjust spacing between content and image */
+}
+
+.custom-card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.custom-card-description {
+  margin-bottom: 10px;
+}
+
+.custom-blog-image-wrapper {
+  flex: 0 0 auto;
+  margin-left: 20px;
+  border-left: 2px solid #f0f0f0;
+  padding-left: 20px;
+}
+
+.custom-blog-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.box {
+  width: calc(50% - 10px); /* Adjust width to fit two boxes in one line with gap */
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow rounded corners */
+}
+.box .content {
+  width: 50%;
+  padding: 0 20px; /* Add padding to content */
+}
+.box .image {
+  width: 50%;
+  position: relative; /* Ensure image container has a relative position */
+  overflow: hidden; /* Hide overflow from image */
+  border-radius: 0 10px 10px 0; /* Rounded corners only on the right side */
+}
+.box .image img {
+  width: 100%; /* Ensure image fills its container */
+  height: 100%; /* Ensure image fills the entire height of its container */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  object-position: center; /* Center the image within its container */
+}
+.box .content {
+  text-align: left; /* Align content to the left */
+}
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+    flex-direction: column; /* Stack boxes vertically on smaller screens */
+  }
+  .box .content, .box .image {
+    width: 100%;
+    border-radius: 10px; /* Adjust border radius for stacking on smaller screens */
+  }
+  .box .image img {
+    height: auto; /* Reset height for image on smaller screens */
+  }
+}
+
