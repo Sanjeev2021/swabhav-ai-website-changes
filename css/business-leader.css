@@ -6204,8 +6204,8 @@ figcaption {
 
 .navigation-wrap {
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
+  background-color: white;
+  position: fixed;
   top: 0%;
   bottom: auto;
   left: 0%;
@@ -9977,11 +9977,10 @@ figcaption {
 
 #w-node-business {
   background: none; /* Remove the background color and gradient */
-  border: none; /* Remove the border */
+  border: 1px solid black; /* Remove the border */
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align the content from flex start */
-  
 }
 
 
