@@ -10282,3 +10282,46 @@ figcaption {
   }
 }
 
+
+
+.tabbed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #1C0E38;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Maximum width to maintain readability */
+  margin: 0 auto; /* Center align horizontally */
+  height: 500px; /* Adjust height as needed */
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1C0E38;
+  border-bottom: 1px solid #ffffff; /* Separator line */
+}
+
+.tab {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background-color: #ffffff;
+  color: #1C0E38;
+}
+
+.tab-content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+
+
+/** Old course website css*/

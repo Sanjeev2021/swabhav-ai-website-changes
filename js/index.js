@@ -46296,3 +46296,25 @@ Webflow.require('commerce') && Webflow.require('commerce').init({
   siteId: "6465ef4a3ebaf6d1094d9e5b",
   apiUrl: "https://render.webflow.com"
 });
+
+
+function openTab(tabId) {
+  // Hide all tab contents
+  var tabContents = document.querySelectorAll('.tab-pane');
+  tabContents.forEach(function(tabContent) {
+    tabContent.style.display = 'none';
+  });
+
+  // Deactivate all tabs
+  var tabs = document.querySelectorAll('.tab');
+  tabs.forEach(function(tab) {
+    tab.classList.remove('active');
+  });
+
+  // Show the selected tab content
+  document.getElementById(tabId).style.display = 'block';
+
+  // Activate the clicked tab
+  var activeTab = document.querySelector(`.tab[data-tab="${tabId}"]`);
+  activeTab.classList.add('active');
+}
