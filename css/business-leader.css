@@ -11272,3 +11272,266 @@ html {
     flex: 1;
   }
 }
+
+
+/** the learning tab part*/
+
+.learning {
+  width: 100%;
+  margin-top: 50px;
+  min-height: 80vh;
+  max-height: 200vh;
+  background-color: #10162F;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.learning-header {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  height: auto;
+}
+
+.learning-heading {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-top: -40px;
+}
+
+.learning-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.learning-menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.learning-menu div {
+  width: 80%;
+  min-height: 80px;
+  text-align: left;
+  color: #c9c9c9;
+  background-color: transparent;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: normal;
+  transition: .3s ease-out;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.learning-detail {
+  color: #c9c9c9;
+  font-weight: normal;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.learning-menu .active {
+  padding-top: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(145, 145, 145, 0.1);
+}
+
+.learning-menu div:hover {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(145, 145, 145, 0.1);
+}
+
+.learning-video {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  border-radius: 20px;
+  border: 4px solid white;
+  width: 560px;
+  height: 315px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .learning-content {
+      flex-direction: column;
+  }
+
+  .learning-menu {
+      width: 100%;
+  }
+
+  .learning-video {
+      width: 100%;
+  }
+
+  .video {
+      width: 300px;
+      height: 200px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .about-section {
+    margin-left: 0;
+  }
+
+  .all-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .welcome {
+    font-size: 12px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+}
+.z-index-6 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Adjust this value to move the hamburger to the desired position */
+}
+
+.hamburger button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.hamburger .open {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburger .open div {
+  width: 80%;
+  height: 5px;
+  background: black;
+}
+
+.hamburger .close {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.hamburger .close div {
+  width: 80%;
+  height: 5px;
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger .close div:nth-child(1) {
+  transform: rotate(45deg);
+  margin-bottom: -5px;
+}
+.hamburger .close div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1180px) {
+  nav ul .li-items {
+    display: none;
+  }
+  .nav-items {
+    justify-content: space-evenly;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Adjust this value to move the hamburger to the desired position */
+  }
+}
+
+.mobile-items {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  background-color: #fffae5;
+}
+
+.mobile-nav ul {
+  height: 100%;
+  width: 100%;
+}
+
