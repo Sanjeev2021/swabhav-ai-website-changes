@@ -646,3 +646,12 @@ function Hamburger() {
     }
   });
 });
+
+document.querySelectorAll('.tab-header').forEach(header => {
+  header.addEventListener('click', () => {
+      document.querySelectorAll('.tab-header').forEach(header => header.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      header.classList.add('active');
+      document.getElementById(header.getAttribute('data-tab')).classList.add('active');
+  });
+});
