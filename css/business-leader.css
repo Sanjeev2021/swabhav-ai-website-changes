@@ -11547,33 +11547,41 @@ ul {
 }
 
 .tab-headers {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
   display: flex;
-  flex-wrap: wrap;
-  background-color: #f1f1f1;
+  flex-wrap: wrap; /* Ensure that all tab headers are shown */
   border-bottom: 1px solid #ccc;
 }
 
 .tab-header {
-  flex: 1;
+  flex: 1 1 20%; /* Adjust the flex-basis to ensure they take equal space */
   padding: 14px 16px;
   text-align: center;
   cursor: pointer;
-  background-color: #EDEDED;
   transition: background-color 0.3s;
+  background-color: #f0f0f0; /* Default background color for non-active tabs */
+  color: #333
+}
+
+.tab-header:hover {
+  background-color: #CCC; /* Change the background color on hover */
+  color: black; /* Change the text color on hover */
 }
 
 .tab-header.active {
-  background-color: #1E1033;
+  background-color: #1C0E38;
   color: white;
 }
-
 .tab-content {
   display: none;
   padding: 20px;
 }
 
 .tab-content.active {
-  display: block;
+  display: flex;
+  margin-top: 30px;
 }
 
 .tab-content h2 {
@@ -11581,8 +11589,11 @@ ul {
 }
 
 .get-in-touch {
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
   margin-top: 20px;
   background-color: #a78bfa;
   color: white;
@@ -11610,3 +11621,193 @@ ul {
   }
 }
 
+.tab-content div {
+  width: 50%;
+}
+
+.tab-content ul {
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 10%;
+  list-style: none;
+}
+
+.tab-headers {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+
+
+.tab-container2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 20px;
+  background-color: #1E1033;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.headers-2 {
+  flex-direction: row;
+}
+
+.bfsi-section {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bfsi-container {
+  display: flex;
+  gap: 20px;
+}
+
+.bfsi-pricing-plan {
+  opacity: 1;
+  max-width: 420px;
+  max-height: 700px;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+#bfsi-courses {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto; /* Enable vertical scroll */
+  max-height: 600px; /* Set maximum height */
+}
+
+.bfsi-content {
+  max-height: 700px;
+  overflow-y: auto;
+  padding-left: 20px;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.bfsi-content::-webkit-scrollbar {
+  display: none;  
+}
+
+.bfsi-course {
+  margin-bottom: 40px;
+}
+
+.business-courses-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.custom-course-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-course-box .column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .bfsi-services {
+      width: 250px;
+      border-right: 1px solid #ddd;
+      margin-bottom: 0;
+  }
+
+  .bfsi-content {
+      flex: 1;
+      padding: 20px;
+  }
+}
+
+.text-size-regular-5 {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.text-size-regular-5 .bold {
+  font-weight: bold;
+}
+
+.text-size-regular-5 a {
+  text-decoration: none;
+  color: #000;
+  text-shadow: 0 0 transparent; /* Transparent text shadow */
+  transition: color 0.3s, text-shadow 0.3s; /* Add text-shadow transition */
+}
+
+.text-size-regular-5 a:hover {
+  color: #555;
+  font-weight: bold;
+  text-shadow: none; /* Remove text shadow on hover */
+}
+
+
+.business-courses-container {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.custom-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.custom-list li {
+  color: #6e45e9;
+}
+
+
+.bfsi-pricing-plan-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+}
+
+.bfsi-pricing-plan a.active {
+  font-weight: bold;
+}
+
+.bfsi-pricing-plan {
+  width: 100%;
+  max-width: 450px;
+  max-height: 700px;
+  position: sticky;
+  top: 0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.pricing-plan-top h3 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.plan-feature-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
