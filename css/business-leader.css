@@ -11561,7 +11561,8 @@ ul {
   cursor: pointer;
   transition: background-color 0.3s;
   background-color: #f0f0f0; /* Default background color for non-active tabs */
-  color: #333
+  color: #333;
+  font-weight: normal;
 }
 
 .tab-header:hover {
@@ -11572,7 +11573,17 @@ ul {
 .tab-header.active {
   background-color: black;
   color: white;
+  font-weight: bold;
 }
+
+.tab-header h6 {
+  font-weight: normal;
+}
+
+.tab-header.active > h6 {
+  font-weight: bold;
+}
+
 .tab-content {
   display: none;
   padding: 20px;
@@ -11864,3 +11875,13 @@ ul {
   margin-right: 10px; 
 }
 
+ul.program-custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+span.duration {
+  margin-left: auto;
+  padding-left: 20px;
+}
