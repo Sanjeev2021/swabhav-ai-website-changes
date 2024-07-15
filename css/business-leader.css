@@ -11701,12 +11701,25 @@ ul {
   max-height: 700px;
   overflow-y: auto;
   padding-left: 20px;
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
 }
 
+/* Custom scrollbar styling */
 .bfsi-content::-webkit-scrollbar {
-  display: none;  
+  width: 12px; /* Width of the scrollbar */
+}
+
+.bfsi-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.bfsi-content::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Space around the scrollbar thumb */
+}
+
+.bfsi-content::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar thumb on hover */
 }
 
 .bfsi-course {
