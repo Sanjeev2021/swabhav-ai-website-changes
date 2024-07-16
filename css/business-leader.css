@@ -4776,7 +4776,7 @@ figcaption {
 
 .navbar-link {
   padding: 1.5rem .7rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   display: inline-block
 }
@@ -6214,7 +6214,7 @@ figcaption {
 
 .navigation {
   z-index: 9;
-  width: 90%;
+  width: 95%;
   max-width: 1300px;
   background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px rgba(0, 46, 36, .2);
@@ -10400,7 +10400,8 @@ figcaption {
 
 .new-box {
   width: calc(100% - 160px); 
-  padding: 20px;
+  max-width: calc(100% - 160px); 
+  padding: 10px 20px;
   box-sizing: border-box;
   border: 2px solid #333;
   border-radius: 10px;
@@ -10467,11 +10468,7 @@ button:hover {
   .new-box {
     flex-direction: column;
     height: auto;
-    width: 100%;
     margin-top: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    border: none;
   }
   
   .custom-content-container, .custom-image-container {
@@ -11265,7 +11262,6 @@ html {
   .new-box {
     width: 100%; 
     flex-direction: row;
-    height: 80vh;
     margin: 0 auto; /* Center the box horizontally */
   }
   .custom-content-container {
@@ -11274,4 +11270,661 @@ html {
   .custom-image-container {
     flex: 1;
   }
+}
+
+
+/** the learning tab part*/
+
+.learning {
+  width: 100%;
+  margin-top: 50px;
+  min-height: 80vh;
+  max-height: 200vh;
+  background-color: #10162F;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.learning-header {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  height: auto;
+}
+
+.learning-heading {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-top: -40px;
+}
+
+.learning-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.learning-menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.learning-menu div {
+  width: 80%;
+  min-height: 80px;
+  text-align: left;
+  color: #c9c9c9;
+  background-color: transparent;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: normal;
+  transition: .3s ease-out;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.learning-detail {
+  color: #c9c9c9;
+  font-weight: normal;
+  font-size: 16px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.learning-menu .active {
+  padding-top: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(145, 145, 145, 0.1);
+}
+
+.learning-menu div:hover {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(145, 145, 145, 0.1);
+}
+
+.learning-video {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  border-radius: 20px;
+  border: 4px solid white;
+  width: 560px;
+  height: 315px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .learning-content {
+      flex-direction: column;
+  }
+
+  .learning-menu {
+      width: 100%;
+  }
+
+  .learning-video {
+      width: 100%;
+  }
+
+  .video {
+      width: 300px;
+      height: 200px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .about-section {
+    margin-left: 0;
+  }
+
+  .all-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .welcome {
+    font-size: 12px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+
+}
+.z-index-6 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Adjust this value to move the hamburger to the desired position */
+}
+
+.hamburger button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.hamburger .open {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburger .open div {
+  width: 80%;
+  height: 5px;
+  background: black;
+}
+
+.hamburger .close {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.hamburger .close div {
+  width: 80%;
+  height: 5px;
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+.hamburger .close div:nth-child(1) {
+  transform: rotate(45deg);
+  margin-bottom: -5px;
+}
+.hamburger .close div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1180px) {
+  nav ul .li-items {
+    display: none;
+  }
+  .nav-items {
+    justify-content: space-evenly;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Adjust this value to move the hamburger to the desired position */
+  }
+}
+
+.mobile-items {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  background-color: #fffae5;
+}
+
+.mobile-nav ul {
+  height: 100%;
+  width: 100%;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 20px;
+  background-color: #1E1033;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab-headers {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  display: flex;
+  flex-wrap: wrap; /* Ensure that all tab headers are shown */
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-header {
+  flex: 1 1 20%; /* Adjust the flex-basis to ensure they take equal space */
+  padding: 14px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #f0f0f0; /* Default background color for non-active tabs */
+  color: #333;
+  font-weight: normal;
+}
+
+.tab-header:hover {
+  background-color: #CCC; /* Change the background color on hover */
+  color: black; /* Change the text color on hover */
+}
+
+.tab-header.active {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.tab-header h6 {
+  font-weight: normal;
+}
+
+.tab-header.active > h6 {
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: flex;
+  margin-top: 30px;
+}
+
+.tab-content h2 {
+  margin-top: 0;
+}
+
+.get-in-touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #a78bfa;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.get-in-touch:hover {
+  background-color: #7c63f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tab-header {
+      flex: 1 1 50%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-header {
+      flex: 1 1 100%;
+      padding: 10px;
+  }
+}
+
+.tab-content div {
+  width: 50%;
+}
+
+.tab-content ul {
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-left: 10%;
+  list-style: none;
+}
+
+.tab-headers {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+
+
+.tab-container2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+.headers-2 {
+  flex-direction: row;
+}
+
+.bfsi-section {
+  margin-bottom: 5%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bfsi-container {
+  display: flex;
+  gap: 20px;
+}
+
+.bfsi-pricing-plan {
+  opacity: 1;
+  max-width: 420px;
+  max-height: 700px;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+}
+
+#bfsi-courses {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto; /* Enable vertical scroll */
+  max-height: 600px; /* Set maximum height */
+}
+
+.bfsi-content {
+  max-height: 700px;
+  overflow-y: auto;
+  padding-left: 20px;
+}
+
+/* Custom scrollbar styling */
+.bfsi-content::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+.bfsi-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.bfsi-content::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+  border: 3px solid #f1f1f1; /* Space around the scrollbar thumb */
+}
+
+.bfsi-content::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color of the scrollbar thumb on hover */
+}
+
+.bfsi-course {
+  margin-bottom: 40px;
+}
+
+.business-courses-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.custom-course-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-course-box .column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .bfsi-services {
+      width: 250px;
+      border-right: 1px solid #ddd;
+      margin-bottom: 0;
+  }
+
+  .bfsi-content {
+      flex: 1;
+      padding: 20px;
+  }
+}
+
+.text-size-regular-5 {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.text-size-regular-5 .bold {
+  font-weight: bold;
+}
+
+.text-size-regular-5 a {
+  text-decoration: none;
+  color: #000;
+  text-shadow: 0 0 transparent; /* Transparent text shadow */
+  transition: color 0.3s, text-shadow 0.3s; /* Add text-shadow transition */
+}
+
+.text-size-regular-5 a:hover {
+  color: #555;
+  font-weight: bold;
+  text-shadow: none; /* Remove text shadow on hover */
+}
+
+
+.business-courses-container {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.custom-list {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.custom-list li {
+  color: #6e45e9;
+}
+
+
+.bfsi-pricing-plan-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+}
+
+.bfsi-pricing-plan a.active {
+  font-weight: bold;
+}
+
+.bfsi-pricing-plan {
+  width: 100%;
+  max-width: 450px;
+  max-height: 700px;
+  position: sticky;
+  top: 0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.pricing-plan-top h3 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+}
+
+.plan-feature-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.business-hero-custom-box {
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  border: 2px solid #333; 
+  background-color: white;
+}
+
+.Revolutionize-custom-box {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #333; 
+  background-color: white;
+}
+
+.box-with-shadow {
+  padding: 20px; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #ddd; 
+  margin: 20px; 
+  border-radius: 10px;
+}
+
+.program-custom-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+}
+
+.program-custom-list li {
+  background: url() no-repeat left center; 
+  
+  background-size: 20px 20px; 
+  margin-bottom: 10px; 
+}
+
+.horizontal-align {
+  display: flex;
+  align-items: center;
+}
+
+.courses-horizontal-align {
+  display: flex;
+    align-items: center;
+}
+
+.courses-horizontal-align svg {
+  margin-right: 10px; 
+}
+
+ul.program-custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+span.duration {
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
