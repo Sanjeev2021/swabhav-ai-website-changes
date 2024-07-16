@@ -10400,7 +10400,6 @@ figcaption {
 
 .new-box {
   width: calc(100% - 160px); 
-  max-width: calc(100% - 160px); 
   padding: 20px;
   box-sizing: border-box;
   border: 2px solid #333;
@@ -10468,7 +10467,11 @@ button:hover {
   .new-box {
     flex-direction: column;
     height: auto;
+    width: 100%;
     margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
   }
   
   .custom-content-container, .custom-image-container {
