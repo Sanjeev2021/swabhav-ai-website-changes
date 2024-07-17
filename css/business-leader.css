@@ -6430,6 +6430,85 @@ figcaption {
   display: flex
 }
 
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column; /* Ensure items stack vertically */
+    margin-bottom: 10px; /* Reduce bottom margin for spacing */
+  }
+
+  .subfeature,
+  .subfeature-4 {
+    flex-direction: column; /* Stack subfeatures vertically */
+    align-items: flex-start; /* Adjust alignment as needed */
+    margin-bottom: 5px !important;
+    padding-left: 0; 
+    margin-left: 0; 
+  }
+
+  .layout-card-content-top {
+    padding-left: 0 !important; /* Reset padding-left to 0 for mobile view */
+  }
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .bfsi-section {
+    margin-bottom: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .bfsi-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bfsi-pricing-plan {
+    max-width: 100%;
+    max-height: none;
+    position: relative;
+    top: auto;
+    overflow-y: visible;
+  }
+
+  #bfsi-courses {
+    max-height: none;
+    padding: 15px;
+  }
+
+  .bfsi-content {
+    max-height: 300px; /* Reduced height */
+    overflow-y: auto;
+    padding-left: 10px;
+    width: 100%; /* Take entire width */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width */
+  }
+
+  /* Reduce scrollbar width for mobile view */
+  .bfsi-content::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+}
+
+/* Further adjustments for very small devices */
+@media (max-width: 480px) {
+  .bfsi-section {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #bfsi-courses {
+    padding: 10px;
+  }
+
+  .bfsi-content {
+    padding-left: 5px;
+    max-height: 250px; /* Further reduced height */
+  }
+}
+
+
 .text-align-center-4 {
   text-align: center
 }
@@ -10465,45 +10544,86 @@ button:hover {
 
 
 @media (max-width: 768px) {
+
+  .custom-image-container {
+    width: 100%; /* Take full width */
+    height: 200px; 
+    overflow: hidden;
+    margin-left: 80px;
+    object-fit: fill;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .new-box {
     flex-direction: column;
     height: auto;
-    margin-top: 20px;
+    margin-top: 60px; /* Adjusted margin-top */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    margin-left: 0; /* Adjust margins if necessary */
+    margin-right: 0;
+    white-space: nowrap;
+    text-align: center;
   }
   
-  .custom-content-container, .custom-image-container {
-    flex: none;
-    width: 100%;
-    padding: 10px;
-  }
+  .custom-content-container {
+    width: 400px; /* Adjust the width as per your design */
+    padding: 10px; /* Adjust padding as needed */
+    margin: 0 auto; /* Center the container on the page */
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column; /* Stack the items vertically */
+    text-align: center; /* Center text content */
+    white-space: wrap;
+}
   
-  .custom-image-container {
-    height: 200px;
-  }
-  
-  video {
-    border-radius: 10px;
-  }
+
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
   
   .custom-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    text-align: center; /* Center buttons */
   }
   
-  .custom-buttons button {
-    margin-bottom: 10px;
-    width: 100%;
+  .custom-buttons .button {
+    width: 100%; /* Full width buttons */
   }
   
   .custom-level-icons {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .custom-level-icons span {
-    margin-bottom: 5px;
-  }
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.custom-level-icons .business-hero-custom-box {
+    display: inline-flex; /* Use inline-flex for inline element behavior */
+    align-items: center; /* Align items in the center */
+    justify-content: center; /* Center items horizontally within the flex container */
+}
+
+.custom-level-icons svg {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    margin-right: 10px; /* Adjust spacing */
+}
+
+.custom-level-icons span {
+    padding-left: 10px; /* Adjust padding */
+}
+
 }
 
 .title-container {
@@ -11632,6 +11752,7 @@ ul {
   }
 }
 
+
 .tab-content div {
   width: 50%;
 }
@@ -11668,6 +11789,28 @@ ul {
 .headers-2 {
   flex-direction: row;
 }
+
+@media (max-width: 767px) {
+  .tab-content {
+    width: 100% !important; /* Ensure it takes full width of the screen */
+    flex-direction: column; /* Stack items vertically */
+    overflow: hidden; /* Hide any overflowing content */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .tab-content > div {
+    width: 100%; /* Ensure div inside tab-content takes full width */
+    padding: 0 20px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+
+  .tab-content ul {
+    width: 100%; /* Ensure ul takes full width */
+    margin-top: 10px; /* Adjust margin as needed */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+  }
+}
+
 
 .bfsi-section {
   margin-bottom: 5%;
