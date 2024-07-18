@@ -11786,11 +11786,37 @@ ul {
   overflow: hidden;
   
 }
+
+.tab-container-header {
+  width: auto;
+}
+
 .headers-2 {
   flex-direction: row;
 }
 
+@media (min-width: 767px) {
+  .button-mobile {
+    display: none;
+  }
+  .button-desktop {
+    display: block;
+  }
+}
+
 @media (max-width: 767px) {
+  .button-mobile {
+    display: block;
+  }
+  .button-desktop {
+    display: none;
+  }
+  .tab-container-header {
+    width: 100%;
+  }
+  .tab-container2 {
+    margin: 0;
+  }
   .tab-content {
     width: 100% !important; /* Ensure it takes full width of the screen */
     flex-direction: column; /* Stack items vertically */
