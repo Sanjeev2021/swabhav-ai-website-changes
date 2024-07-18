@@ -6509,30 +6509,33 @@ figcaption {
     /* Width of the scrollbar */
   }
 
-  .course-horizontal-align {
+  .custom-horizontal-align {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-
-  .course-horizontal-align p {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
     box-sizing: border-box;
   }
 
-  .course-horizontal-align .image-container {
+  .custom-horizontal-align p {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .custom-horizontal-align .image-container {
     padding-left: 0;
     text-align: center;
   }
 
-  .course-horizontal-align img {
+  .custom-horizontal-align img {
     width: 100%;
     height: auto;
   }
 }
+
 
 
 
@@ -12244,6 +12247,11 @@ ul {
 
 .horizontal-align {
   display: flex;
+  align-items: center;
+}
+
+.custom-horizontal-align {
+  display : flex;
   align-items: center;
 }
 
