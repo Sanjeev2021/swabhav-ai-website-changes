@@ -4297,6 +4297,7 @@ blockquote {
   font-weight: 500;
   transition: background-color .2s;
   display: flex;
+  white-space: nowrap;
 }
 
 
