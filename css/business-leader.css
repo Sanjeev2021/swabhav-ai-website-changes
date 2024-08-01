@@ -11527,6 +11527,13 @@ html {
     border-right: none !important;
   }
 
+  .reinvention-box .custom-course-box .column+.column {
+    margin-left: none !important;
+  }
+
+  .reinvention-box .custom-course-box .column:first-child {
+    margin-left: none !important;
+  }
 
   .custom-course-box .column:last-child {
     border-bottom: none;
