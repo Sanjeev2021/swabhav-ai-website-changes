@@ -11522,6 +11522,11 @@ html {
     padding: 10px;
   }
 
+  .reinvention-box .custom-course-box .column {
+    border-right: none !important;
+  }
+
+
   .custom-course-box .column:last-child {
     border-bottom: none;
   }
@@ -12306,3 +12311,46 @@ span.duration {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+.w-webflow-badge {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .w-webflow-badge {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .section {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .custom-course-box {
+      display: block;
+      text-align: center;
+      box-shadow: 0px 12px 24px 0px rgba(219, 219, 219, 0.8);
+  }
+
+  .custom-course-box .column {
+      border-right: none;
+      border-bottom: 1px solid white;
+      padding: 15px;
+  }
+
+  .custom-course-box .column:last-child {
+      border-bottom: none;
+  }
+
+  .custom-course-box p {
+      font-size: 18px;
+  }
+} */
+
